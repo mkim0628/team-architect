@@ -79,7 +79,7 @@ Automotive / Humanoid 도메인의 스토리지는 일반 Client/Enterprise SSD�
 
 ### DP2. 쓰기 성능·복구 시간·고수명을 위한 저널링 메커니즘
 
-**해결하려는 문제**: PLPless 환경에서 map 전체 flush 없이도 무결성을 보장하면서, flush/쓰기 비용을 최소화.
+**해결하려는 문제**: PLPless 환경에서 map 전체 flush 없이도 무결성을 보장하고 flush/쓰기 비용을 최소화하면서도, 저널링으로 인한 성능 저하는 최대한 막는 것.
 
 - **구조 방향**
   - L2P 변경분(delta)을 **journal에 순차 기록**하고, map page 자체의 flush는 지연/배치 처리.
