@@ -34,3 +34,11 @@ Automotive 및 Humanoid 향 **고성능·고수명 SSD FTL(Flash Translation Lay
 | 문서 | 내용 |
 |---|---|
 | [docs/01-project-overview.md](docs/01-project-overview.md) | 과제 개요: 배경, 환경 제약, 목표, QA 시나리오, 설계 포인트, QA↔DP 추적성 매트릭스 |
+
+## 스킬 (.claude/skills)
+
+| 스킬 | 용도 |
+|---|---|
+| `dp-candidate-selection` | DP별 두 후보 구조 설계 → 특징·장점·단점·QA 평가·상호 trade-off 분석 → 선정 문서(docs/dp/*-candidates.md) 산출 |
+| `dp-tactic-refinement` | 채택 구조의 단점을 보완할 tactic 탐색·평가 → 권고 조합과 잔여 리스크 문서(docs/dp/*-tactics.md) 산출 |
+| `architect-ppt` | Architect 과제 하우스 스타일 발표자료(.pptx) 생성 |
